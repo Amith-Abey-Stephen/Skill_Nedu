@@ -32,31 +32,33 @@ body {
 }
 
 
+
+
+
 .con{
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
 
-.right {
+.left {
     margin-right: -15em; 
     margin-top: -15em;
 
 }
 
-.right img{
+.left img{
     height: 90%;
 }
 
-.left{
+.right{
     margin-left: 20px;
 }
-.login h3{
+.signin h3{
     font-family: "Roboto",sans-serif;
-    /* font-size: px; */
     font-weight:bolder;
-    margin-left: 2em;
-    margin-top: 4em;
+    margin-left: 1.7em;
+    /* margin-top: 4em; */
 }
 form{
     margin-top: 5em;

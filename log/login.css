@@ -70,10 +70,7 @@ form a{
     font-family: "Inter",sans-serif;
     font-size: 12px;
 }
-.btn{
-    margin-left: 6em;
-    margin-top: 1em;
-}
+
 .btn{
     padding-left: 10em;
     padding-right: 10em;
@@ -83,8 +80,15 @@ form a{
     border: none;
     background: #A96287;
     color: #ffffff;
-
+    margin-left: 6em;
+    margin-top: 1em;
 }
+.btn:focus,
+.btn:active {
+  outline: none; 
+  box-shadow: none;
+}
+
 
 .signuptext{
     margin-left: 10em;

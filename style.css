@@ -24,11 +24,9 @@ body {
     padding: 10px;
 }
 
-
 .navbar{
     margin: 1em;
 }
-
 
 .logo img{
     height: 56px;
@@ -49,7 +47,6 @@ body {
 }
 
 .home .details{
-    /*background-color: aqua;*/
     height: 500px;
     width: 600px;
     margin-top: 6em;
@@ -80,7 +77,6 @@ body {
     font-family: "Roboto",sans-serif;
 }
 .btn{
-    /* */
     margin-left: 2em;
     padding-left: 2em;
     padding-right: 2em;
@@ -99,7 +95,11 @@ body {
     background-color: transparent; 
     border: 2px solid #C35691;
     color: #C35691;
-    
+}
+.btn:focus,
+.btn:active {
+  outline: none; 
+  box-shadow: none;
 }
 
 .home img{
@@ -111,79 +111,76 @@ body {
     margin-bottom: 50px;
 }
 
-/* Container for left and right content */
 .split-container {
     display: flex;
     align-items: center;
-    justify-content: space-around; /* Adjust horizontal spacing */
-    padding: 20px; /* Add padding for better spacing */
-  }
+    justify-content: space-around; 
+    padding: 20px;
+}
   
-  /* Style for left side (image) */
-  .left-side {
+.left-side {
     flex: 1;
-  }
+}
   
-  /* Image styling */
-  .left-side img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      padding-top: 50px;
-      padding-left: 80px;
-      border-radius: 20px;
-    }
+.left-side img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding-top: 50px;
+    padding-left: 80px;
+    border-radius: 20px;
+}
   
-  /* Style for right side (text) */
-  .right-side {
+.right-side {
     font-family: "Roboto", sans-serif;
     flex: 1;
-  }
-  .right-side h1 {
+}
+.right-side h1 {
     font-family: "Inknut Antiqua", sans-serif;
     font-size: 45px;
     margin-top: -50px;
     margin-bottom: 50px;
     font-weight: 300;
-  }
+}
   
-  .card {
+.card {
     border-radius: 5px;
     padding: 1px;
-    margin-bottom: 20px; /* Add space between cards */
-    margin-right: 50px; /* Add space between cards */
+    margin-bottom: 20px;
+    margin-right: 50px;
     border: none;
     transition: transform 0.3s ease; 
-  }
-  .card:hover {
-      transform: translateY(-5px); /* Add a slight lift effect on hover */
-  }
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+}  
+
+svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 22px;
+    color: #A55680;
+}
   
-  .card-header {
-      display: flex;
-      align-items: center;
-      font-size: 25px;
-      background-color: transparent;
-      border: none;
-  }  
-  svg {
-      width: 18px;
-      height: 18px;
-      margin-right: 22px;
-      color: #A55680;
-  }
-  
-  .card-body{
-      margin-left: 45px;
-  }
-  .card-body a{
-      text-decoration: none;
-      color: #A55680;
-  }
-  .card-body p{
-      font-size:13px ;
-  }
-  .card-text{
+.card-body{
+    margin-left: 45px;
+}
+.card-body a{
+    text-decoration: none;
+    color: #A55680;
+}
+.card-body p{
+    font-size:13px ;
+}
+.card-text{
     margin-top: -20px;
     margin-bottom: -2px;
-  }
+}

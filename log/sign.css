@@ -5,9 +5,15 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
+.rect{
+    background: #FDDFF0;
+    height: 100vh;
+    border-radius: 67px 0px 0px 67px;
+    margin-left: 20em;
+}
 .navbar{
     padding: 10px;
+    margin-left: -20em;
 }
 
 .navbar-brand{
@@ -39,16 +45,15 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    margin-left: -20em;
 }
 
 .left {
-    margin-right: -15em; 
-    margin-top: -15em;
-
+margin-left: 5em;
 }
 
 .left img{
-    height: 90%;
+    height: 110%;
 }
 
 .right{
@@ -74,14 +79,12 @@ form input{
     border-right: 0;
     color: #A96287;
     outline: none;
+    background-color: transparent;
 }
 #togglePassword {
-    position: absolute;
-    top: 58%;
-    left: 36%;
-    transform: translateY(-50%);
     cursor: pointer;
 }
+
 form a{
     text-decoration: none;
     color: #A96287;

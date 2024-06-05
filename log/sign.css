@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans&family=Poppins:wght@300;400;500;600&family=Roboto&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background: linear-gradient(to right, white 25%, #FDDFF0 25%); */
+}
+.rect{
+    background: #FDDFF0;
+    height: 100vh;
+    border-radius: 67px 0px 0px 67px;
+    margin-left: 20em;
+}
+
+
+.navbar{
+    padding: 20px;
+    margin-left: -16.5em;
+    margin-right: 5.5em;
+}
+.navbar-brand img {
+    height: 56px;
+    width: auto;
+}
+.nav-link {
+    padding: 14px;
+    color: #090909;
+}
+.nav-link.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+
+.con{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-left: -20em;
+}
+
+.left {
+margin-left: 2em;
+margin-top: 1em;
+}
+
+.right{
+    margin-left: -100px;
+    margin-top: 6em;
+}
+.signup h3{
+    margin-left: 1.7em;
+}
+form{
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-right: 4.5em;
+}
+form input{
+    display: block;
+    padding-bottom: 0.5em;
+    margin: 2em;
+    width: 500px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: #A96287;
+    outline: none;
+    background-color: transparent;
+}
+
+form input:hover {
+    border-color: #C35691;
+}
+.password-container {
+    position: relative;
+}
+.password-container input {
+    color: #000;
+}
+#togglePassword,#ConfirmtogglePassword{
+    position: absolute;
+    top: 50%;
+    right: 3em;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+form a{
+    text-decoration: none;
+    color: #A96287;
+    margin-left: 3em;
+    font-family: "Inter",sans-serif;
+    font-size: 12px;
+}
+
+
+.btn{
+    height: 2.5em;
+    width: calc(90% - 1px);
+    border-radius: 7px;
+    border: none;
+    background: #A96287;
+    color: #ffffff;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+.btn:hover {
+    background-color: transparent;
+    height: 40px;
+    border: 2px solid #C35691;
+    color: #C35691;
+    font-weight: 500;
+
+
+}
+.btn:focus,
+.btn:active
+{
+    outline: none; 
+    box-shadow: none;
+}
+ 
+.logintext{
+    margin-left: 10em;
+}
+.logintext a{
+    text-decoration: none;
+    color: #A96287;
+    margin-left: 5px;
+    font-family: "Inter",sans-serif;
+    font-size: 16px;
+}
+.logintext a:hover{
+    color: #3d3dff;
+}
+

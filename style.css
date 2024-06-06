@@ -32,11 +32,17 @@ body {
 
 .navbar-menu {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    /* background-color: #A55680; */
+    /* width: 220vb; */
+    text-align: right;
+    align-items: flex-end;
+    padding-left: 64rem;
 }
 
 .navbar-nav {
-    display: flex;
+    display: inline-flex;
+    align-items: flex-end;
 }
 
 .nav-item {
@@ -44,7 +50,7 @@ body {
 }
 
 .nav-link {
-    color: #ffffff;
+    color: #3d1d1d;
     text-decoration: none;
 }
 
@@ -207,14 +213,16 @@ svg {
     .navbar {
         flex-direction: column;
         align-items: flex-start;    
-        width: 100%;
+        /* width: 100%; */
     }
 
     .navbar-menu {
         display: none;
         flex-direction: column;
-        width: 100%;
+        /* width: 100%; */
         margin-top: 1rem;
+        padding-left: 0;
+        padding-right: 1rem;
     }
 
     .navbar-toggler {
@@ -228,7 +236,7 @@ svg {
 
     #navdiv1{
         /* background-color: #A55680; */
-        width: 100vb;
+        width: 18em;
         text-align: right;
         margin-right: 1rem;
     }

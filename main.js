@@ -1,16 +1,14 @@
-let course = document.getElementById("cor");
+let courseLink = document.getElementById("cor");
 
-course.onclick = function() {
-    if (course.innerText === "Course") {
-        course.textContent = "Home";
-        course.href = "#4"; 
+courseLink.addEventListener("click", function() {
+    if (courseLink.innerText === "Course") {
+        courseLink.textContent = "Home";
+        courseLink.href = "#course-details";
     } else {
-        course.textContent = "Course";
-        course.href = "#"; 
+        courseLink.textContent = "Course";
+        courseLink.href = "#";
     }
-}
-
-
+});
 
 let navbarToggler = document.getElementById("navbar-toggler");
 let navbarMenu = document.getElementById("navbar-menu");
@@ -22,6 +20,5 @@ navbarToggler.addEventListener("click", function() {
     } else {
         navbarMenu.style.display = "flex";
         navbarToggler.classList.add("open");
-
     }
 });

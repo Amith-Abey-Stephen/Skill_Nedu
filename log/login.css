@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans&family=Poppins:wght@300;400;500;600&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans&family=Poppins:wght@300;400;500;600&family=Roboto&display=swap');
+
+:root{
+    --primary-color: #C35691;
+    --primary-black: #000;
+    --primary-white: #fff;
+}
 
 body{
     overflow: hidden;
@@ -37,17 +42,21 @@ body{
     margin-right: -15em; 
     margin-top: -15em;
 }
-.right img{
-    height: 90%;
+right img {
+
+    max-width: 100%; /* Ensure the image does not overflow */
+
+    height: auto; /* Maintain aspect ratio */
+
+    object-fit: cover; /* Cover the container */
 }
 .left{
     margin-left: 20px;
 }
 .login h3{
-    font-family: "Roboto",sans-serif;
-    font-weight:bolder;
+    font-weight:bold;
     margin-left: 1.7em;
-    margin-top: 4em;
+    margin-top: 2em;
 }
 
 
@@ -59,7 +68,7 @@ form input{
     display: block;
     padding-bottom: 0.5em;
     margin: 2em;
-    width:100px;
+    width: calc(175% - 1px);
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -138,10 +147,6 @@ form a{
 
 @media (max-width: 768px) {
 
-    body{
-        height: 100%;
-        margin-bottom: -10000px;
-    }
 
     .navbar{
         padding: 10px;
@@ -207,21 +212,18 @@ form a{
         text-align: center;
     }
 
-    .password-container {
-        position: relative;
-    }
+
     .password-container input {
         width: calc(100% - 10px);
     }
     #togglePassword {/*password eye*/
-        position: absolute;
-        top: 50%;
+
         right: 15px;
         transform: translateY(-50%);
         cursor: pointer;
     }
     #fp {      /*forgot password*/
-        position: relative;
+
         top: -10px;
         left: 1px;
     }

@@ -14,31 +14,20 @@ togglePassword.onclick = function () {
     }
 };
 
-// password is declared in line 2
-const username = document.getElementById('username');
-if( username==username)
-    {
-        console.log("username fine")
-        if( password == password)
-            {
-                console.log("Password correct,user loged in");
-            }
-        
-        else{
-                console.log("Password Incorrect")
-            }
+const loginForm = document.getElementById('loginForm');
+
+loginForm.addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent form submission
+    
+    const username = document.getElementById('username').value;
+    const passwordValue = document.getElementById('password').value;
+
+    // Example validation (replace with actual login logic)
+    if (username === 'username' && passwordValue === 'password') {
+        console.log("Login successful");
+        // Redirect or update UI accordingly
+    } else {
+        console.log("Invalid username or password");
+        // Display error message or handle accordingly
     }
-
-else{
-    console.log("Username incorrect");
-}
-
-
-let logedin = false;
-if(username==username && password == password )
-    {
-        logedin=true;
-        console.log("Logedin")
-
-        // navbar update code to be placed heree...
-    }
+});

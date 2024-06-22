@@ -38,12 +38,10 @@ body {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    text-decoration: none;
     list-style-type: none;
 }
 .nav-item { 
     margin-right: 1em;
-    text-decoration: none;
     width: 100px;
 }
 .nav-link {
@@ -52,9 +50,6 @@ body {
 }
 .nav-link:hover {
     color: var(--primary-color);
-}
-.monkey{
-    display: none;
 }
 
 
@@ -170,7 +165,6 @@ width: auto;
     margin-right: 50px;
     border: none;
     transition: transform 0.3s ease; 
-    /* background: #ff0808; */
 }
 .card:hover {
     transform: translateY(-5px);
@@ -258,38 +252,16 @@ svg {
         outline: none;
         box-shadow: none;
     }
-
-    /* .monkey {
-        display: inline-block;
-        height: auto;
-        animation: swing 2s infinite ease-in-out;
-        margin-right: 0.5em;
-    }    
-    @keyframes swing {
-        0% {transform: rotate(0deg);}
-        25% {transform: rotate(15deg);}
-        50% {transform: rotate(0deg);}
-        75% {transform: rotate(-15deg);}
-        100% {transform: rotate(0deg);}
-    }
-    */
-
-
-
     .navbar-nav {
         flex-direction: column;
     }
-
     .nav-item {
         margin-right: 0;
         margin-bottom: 1em;
     }
-
     .nav-link {
         font-size: 18px;
     }
-
-    
     .home .details {
         height: auto;
         width: 90%;
@@ -319,7 +291,6 @@ svg {
         padding: 0.5em 1em;
         font-size: 14px;
         border-radius: 6px;
-
     }
 
     .split-container {

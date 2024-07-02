@@ -1,7 +1,4 @@
-body{
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans&family=Poppins:wght@300;400;500;600&family=Roboto&display=swap');
 
 :root{
     --primary-color: #C35691;
@@ -9,11 +6,20 @@ body{
     --primary-white: #fff;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-bottom: 20px;
+}
+
+
 .navbar {
-    position: fixed;
     width: 100%;
-    margin-top: 0em;
     background-color: var(--primary-white);
+    
 }
 .nav-main {
     display: flex;
@@ -45,44 +51,35 @@ body{
     color: var(--primary-color);
 }
 
-
-
-.con{
-    padding-bottom: 10em;
-
+section{
+    padding: 20px 20px 20px 20px;
 }
 
-.b{
-    display:flex;
-    justify-content: space-around;
-    margin-left: 5em;
-    margin-right: 5em;
-    align-items: center;
+.pg1{
+    margin: 10em 10em 0em 5em;  /* top  right bottom  left */
+    gap: 5em;
+}
+.l img{
+    width: auto;
+    height: 25em;
+}
+.r{
+    margin-top: 2em;
+}
+.r h2{
+    margin-bottom: 1em;
 }
 
-.l{
-    margin-top: 5em;
-    margin-right: 10em;
-}
-.l h2{
-    font-size: 50px;
+
+.pg2{
+    /* margin-top: 500px; */
 }
 
-.rimg{
-    height: 500px;
-    margin-top: 5em;
-}
 
-.c /*New section*/
-{
-    margin-top: 10em;
-}
 
-/* Mobile view adjustments */
 @media (max-width: 768px) {
-    
+
     .navbar{
-        margin-top: 0em;
         width: 100%;
     }
 
@@ -123,44 +120,39 @@ body{
         font-size: 18px;
     }
 
+
     
-    
-    
-    .b {
-        flex-direction: column;
-        margin-left: 1em;
-        margin-right: 1em;
-    }
+section{
+    padding: 0px 0px 0px 0px;
+}
 
-    .l {
-        margin-top: 2em;
-        margin-right: 0;
-        text-align: center;
-    }
+.pg1{
+    margin: 0em 0em 0em 0em;  /* top  right bottom  left */
+    gap: 0em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.l img{
+    margin-top: 12em;
+    width: auto;
+    height: 15em;
+}
+.r{
+    margin: 0em 1.5em 0em 1.5em;
+    text-align: justify;
+}
+.r h2{
+    margin-bottom: 10em;
+    margin-top: -10em;
+    text-align: center;
+    font-size: 32px;
+}
 
-    .l h2 {
-        font-size: 35px;
-    }
 
-    .rimg {
-        height: auto;
-        margin-top: 2em;
-        width: 100%;
-    }
+.pg2{
+    /* margin-top: 500px; */
+}
 
-    .c {
-        margin-top: 5em;
-    }
 
-    .card-body p.card-text {
-        font-size: 14px;
-    }
-
-    .card-title {
-        font-size: 18px;
-    }
-
-    .card-footer {
-        text-align: center;
-    }
 }

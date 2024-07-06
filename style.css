@@ -218,6 +218,20 @@ svg {
 }
 
 
+.pg1{
+    margin: 10em 10em 10em 5em;  /* top  right bottom  left */
+    gap: 5em;
+}
+.l img{
+    width: auto;
+    height: 25em;
+}
+.r{
+    margin-top: 2em;
+}
+.r h2{
+    margin-bottom: 1em;
+}
 
 @media (max-width: 768px) {
 
@@ -243,7 +257,7 @@ svg {
         cursor: pointer;
         font-size: 1.7rem;
         color: var(--primary-color);
-        margin-left: 5em;
+        margin-left: 6em;
     }
     .navbar-toggler-icon {
         color: var(--primary-color);
@@ -347,6 +361,31 @@ svg {
     }
     .card:hover::before {
         display: none;
+    }
+
+       
+
+    .pg1{
+        margin: 0em 0em 0em 0em;  /* top  right bottom  left */
+        gap: 0em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .l img{
+        margin-top: 12em;
+        width: auto;
+        height: 15em;
+    }
+    .r{
+        margin: 0em 1.5em 0em 1.5em;
+        text-align: justify;
+    }
+    .r h2{
+        margin-bottom: 10em;
+        margin-top: -10em;
+        text-align: center;
+        font-size: 32px;
     }
 }
 

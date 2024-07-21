@@ -250,7 +250,6 @@ svg {
 }
 
 .team-member {
-<<<<<<< HEAD
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -265,44 +264,6 @@ svg {
     border-radius: 50%;
 }
 
-=======
-    background-color: #fffff9;
-    /* border: 1px solid #ddd; */
-    border-radius: 0.5rem;
-    overflow: hidden;
-    border-color: rgb(0, 0, 0);
-    margin: 3rem;
-    padding: 2rem;
-    width: fit-content;
-    box-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.406);
-}
-
-.team-member img {
-    width: 15rem;
-    position: relative;
-    border-top-left-radius: 5rem;
-    border-top-right-radius: 3rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 5rem;
-}
-
-.team-member img:hover::before {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-
-.team-member img::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    inset: 0 0 0 0;
-    background: hsl(200 100% 80%);
-    z-index: -1;
-    transition: transform .3s ease;
-  }
-
->>>>>>> 3ff98f4770ebce204d0f48b5ac0c3aca516eabcd
 .team-member h2 {
     font-size: 1.2em;
     margin: 10px 0 5px;
@@ -313,14 +274,6 @@ svg {
     color: #777;
 }
 
-<<<<<<< HEAD
-=======
-@media (orientation: landscape) {
-    body {
-      grid-auto-flow: column;
-    }
-}
->>>>>>> 3ff98f4770ebce204d0f48b5ac0c3aca516eabcd
 @media (max-width: 768px) {
 
     .navbar{
@@ -452,7 +405,6 @@ svg {
     }
 
        
-
     .pg1{
         margin: 0em 0em 0em 0em;  /* top  right bottom  left */
         gap: 0em;

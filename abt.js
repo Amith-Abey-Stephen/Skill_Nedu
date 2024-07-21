@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             return response.json();
         })
+        
         .then(data => {
             const teamContainer = document.getElementById('team-container');
             data.forEach(member => {

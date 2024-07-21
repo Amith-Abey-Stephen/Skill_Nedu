@@ -253,10 +253,14 @@ svg {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    margin: 10px;
+    /* margin: 10px; */
     padding: 20px;
     width: 200px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 23%; /* Adjust this value if you need more spacing between the items */
+    margin: 2% 5% 0% 2%; /* Adjust margin to create spacing between the divs */
+    box-sizing: border-box;
+
 }
 
 .team-member img {
